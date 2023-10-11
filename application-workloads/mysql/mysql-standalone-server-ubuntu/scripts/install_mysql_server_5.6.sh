@@ -10,7 +10,7 @@ echo "mysql-server-5.6 mysql-server/root_password password $mysqlPassword" | sud
 echo "mysql-server-5.6 mysql-server/root_password_again password $mysqlPassword" | sudo debconf-set-selections
 
 #install mysql-server 5.6
-sudo apt-get -y install mysql-server-5.6
+sudo apt-get -y install mysql-server
 
 #set the password
 #sudo mysqladmin -u root password "$mysqlPassword"   #without -p means here the initial password is empty
